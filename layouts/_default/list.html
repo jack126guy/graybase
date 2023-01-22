@@ -1,9 +1,3 @@
 {{- define "main" -}}
-	<h1>{{ .Title }}</h1>
-	{{- .Content -}}
-	{{- $paginator := .Paginator -}}
-	{{- if gt $paginator.NumberOfElements 0 -}}
-		{{- partial "graybase/list/page-list.html" $paginator.Pages -}}
-		{{- partial "graybase/list/pagination.html" $paginator -}}
-	{{- end -}}
+	{{- partial "graybase/main/list.html" . -}}
 {{- end -}}

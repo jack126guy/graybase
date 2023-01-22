@@ -1,0 +1,7 @@
+<h1>{{ .Title }}</h1>
+{{- .Content -}}
+{{- $paginator := .Paginator -}}
+{{- if gt $paginator.NumberOfElements 0 -}}
+	{{- partial "graybase/main/page-list.html" $paginator.Pages -}}
+	{{- partial "graybase/main/pagination.html" $paginator -}}
+{{- end -}}
