@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+	<head>
+		{{- partial "graybase/head/head.html" . -}}
+		<title>
+			{{- block "title" . -}}
+				{{- partial "graybase/title/page.html" . -}}
+			{{- end -}}
+		</title>
+		{{- block "head-extra" . -}}{{- end -}}
+	</head>
+	<body>
+		{{- block "header" . -}}
+			{{- partial "graybase/header/header.html" . -}}
+		{{- end -}}
+		<main id="main">
+			{{- block "main" . -}}{{- end -}}
+		</main>
+		{{- block "footer" . -}}{{- end -}}
+	</body>
+</html>

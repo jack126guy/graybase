@@ -1,0 +1,8 @@
+<a href="{{ .Site.Home.RelPermalink }}">
+	{{- with .Site.Params.logo -}}
+		<div class="site-logo">
+			<img src="{{ relURL . }}" alt=""/>
+		</div>
+	{{- end -}}
+	<div class="site-title">{{ .Site.Title }}</div>
+</a>
