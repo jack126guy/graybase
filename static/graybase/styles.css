@@ -71,6 +71,9 @@ a:hover, a:focus {
 	content: "\25b8";
 	margin: 0em 0.5em;
 }
+[dir=rtl] .breadcrumb-nav li:before {
+	content: "\25c2";
+}
 .breadcrumb-nav li:first-child:before {
 	content: "";
 	margin: 0em;
@@ -108,12 +111,28 @@ h3 {
 .pagination-previous a:before {
 	content: "\2190  ";
 }
+[dir=rtl] .pagination-previous {
+	right: 0em;
+	left: auto;
+	text-align: right;
+}
+[dir=rtl] .pagination-previous a:before {
+	content: "\2192  ";
+}
 .pagination-next {
 	right: 0em;
 	text-align: right;
 }
 .pagination-next a:after {
 	content: " \2192";
+}
+[dir=rtl] .pagination-next {
+	left: 0em;
+	right: auto;
+	text-align: left;
+}
+[dir=rtl] .pagination-next a:after {
+	content: " \2190";
 }
 @media print {
 	body {
