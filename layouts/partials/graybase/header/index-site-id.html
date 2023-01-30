@@ -1,0 +1,8 @@
+<div class="index-site-id">
+	{{- with .Site.Params.logo -}}
+		<span class="site-logo">
+			<img src="{{ relURL . }}" alt=""/>
+		</span>
+	{{- end -}}
+	<span class="site-title">{{ .Site.Title }}</span>
+</div>

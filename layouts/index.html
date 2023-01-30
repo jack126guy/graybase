@@ -1,6 +1,9 @@
 {{- define "title" -}}
 	{{- partial "graybase/title/index.html" . -}}
 {{- end -}}
+{{- define "header" -}}
+	{{- partial "graybase/header/index-header.html" . -}}
+{{- end -}}
 {{- define "main" -}}
 	{{- .Content -}}
 {{- end -}}
