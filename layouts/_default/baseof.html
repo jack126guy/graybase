@@ -10,12 +10,16 @@
 		{{- block "head-extra" . -}}{{- end -}}
 	</head>
 	<body>
-		{{- block "header" . -}}
-			{{- partial "graybase/header/header.html" . -}}
-		{{- end -}}
+		<header>
+			{{- block "header" . -}}
+				{{- partial "graybase/header/header.html" . -}}
+			{{- end -}}
+		</header>
 		<main id="main">
 			{{- block "main" . -}}{{- end -}}
 		</main>
-		{{- block "footer" . -}}{{- end -}}
+		<footer>
+			{{- block "footer" . -}}{{- end -}}
+		</footer>
 	</body>
 </html>
