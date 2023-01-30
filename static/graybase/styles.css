@@ -138,6 +138,16 @@ h3 {
 	body {
 		padding: 0em;
 	}
+	.site-title {
+		text-align: left;
+		font-size: 1.5em;
+	}
+	[dir=rtl] .site-title {
+		text-align: right;
+	}
+	.main-nav, .breadcrumb-nav, .pagination-previous, .pagination-next {
+		display: none;
+	}
 }
 @media (max-width: 640px) {
 	body {
