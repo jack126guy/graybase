@@ -37,6 +37,9 @@ a:hover, a:focus {
 	text-align: center;
 	font-size: 2.5em;
 }
+.site-id a {
+	color: inherit;
+}
 .site-id span {
 	display: inline-block;
 	vertical-align: middle;
