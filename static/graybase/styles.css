@@ -10,7 +10,7 @@ p, ul, ol {
 a {
 	text-decoration: none;
 }
-a:hover, a:focus {
+a:hover, a:focus, a:hover .site-title, a:focus .site-title {
 	text-decoration: underline;
 }
 .skip-to-main {
