@@ -1,8 +1,8 @@
 <div class="index-site-id">
 	{{- with .Site.Params.graybase.logo -}}
-		<span class="site-logo">
+		<div class="site-logo">
 			<img src="{{ relURL . }}" alt=""/>
-		</span>
+		</div>
 	{{- end -}}
-	<span class="site-title">{{ .Site.Title }}</span>
+	<div class="site-title"><h1>{{ .Site.Title }}</h1></div>
 </div>

@@ -54,12 +54,15 @@ a:hover, a:focus, a:hover .site-title, a:focus .site-title {
 .index-site-id {
 	font-size: 3em;
 }
-.index-site-id span {
-	display: block;
+.index-site-id div {
 	margin: 0.5em;
 }
 .index-site-id .site-logo {
 	height: 2em;
+}
+.index-site-id h1 {
+	font-size: 100%;
+	margin: 0em;
 }
 .main-nav ul {
 	list-style-type: none;
