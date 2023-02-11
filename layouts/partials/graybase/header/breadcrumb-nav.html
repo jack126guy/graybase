@@ -1,5 +1,7 @@
-<nav class="breadcrumb-nav">
-	<ol>
-		{{- partial "graybase/header/breadcrumb-helper.html" (dict "leaf" . "current" .) -}}
-	</ol>
-</nav>
+{{- if .Site.Params.graybase.show_breadcrumbs | default true -}}
+	<nav class="breadcrumb-nav">
+		<ol>
+			{{- partial "graybase/header/breadcrumb-helper.html" (dict "leaf" . "current" .) -}}
+		</ol>
+	</nav>
+{{- end -}}
