@@ -1,0 +1,8 @@
+{{- if .Date -}}
+	{{- $displayFormat := .Site.Params.graybase.page_date_format | default ":date_long" -}}
+	{{- $attributeFormat := "2006-01-02T15:04:05-07:00" -}}
+	<p class="page-date">
+		<time datetime="{{ time.Format $attributeFormat .Date }}">{{ time.Format $displayFormat .Date }}</time>
+		{{- if ne .Lastmod .Date }} (updated <time datetime="{{ time.Format $attributeFormat .Lastmod }}">{{ time.Format $displayFormat .Lastmod }}</time>){{ end -}}
+	</p>
+{{- end -}}

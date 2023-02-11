@@ -1,4 +1,5 @@
 <article>
 	<h1>{{ .Title }}</h1>
+	{{- partial "graybase/main/page-date.html" . -}}
 	{{- .Content -}}
 </article>
