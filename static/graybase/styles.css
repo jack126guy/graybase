@@ -66,11 +66,11 @@ a:hover, a:focus, a:hover .site-title, a:focus .site-title {
 	font-size: 100%;
 	margin: 0em;
 }
-.main-nav ul {
+.top-menu-nav ul {
 	list-style-type: none;
 	padding: 0em;
 }
-.main-nav li {
+.top-menu-nav li {
 	display: inline-block;
 	margin: 0.375em;
 	padding: 0.375em;
@@ -170,7 +170,7 @@ h3 {
 	[dir=rtl] .site-id {
 		text-align: right;
 	}
-	.main-nav, .breadcrumb-nav, .pagination-previous, .pagination-next {
+	.top-menu-nav, .breadcrumb-nav, .pagination-previous, .pagination-next {
 		display: none;
 	}
 }

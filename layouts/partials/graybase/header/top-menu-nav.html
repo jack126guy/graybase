@@ -1,0 +1,7 @@
+<nav class="top-menu-nav">
+	<ul>
+		{{- range . -}}
+			<li>{{ .Pre }}<a href="{{ .URL }}">{{ .Name }}</a>{{ .Post }}</li>
+		{{- end -}}
+	</ul>
+</nav>
