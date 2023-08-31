@@ -52,6 +52,7 @@ a:hover, a:focus, a:hover .site-title, a:focus .site-title {
 }
 .site-logo img {
 	height: 100%;
+	width: auto;
 }
 .index-site-id {
 	font-size: 3em;
